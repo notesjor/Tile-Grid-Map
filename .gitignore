@@ -63,3 +63,4 @@ testdata
 pandoc
 sqlite3
 config
+*.snk
