@@ -35,9 +35,11 @@ namespace TileGridMapTest
 
       Map.FixInnerBorder(2);
 
+      Map.SetAllCountryBackground(new SolidColorBrush(Colors.Gray));
+
       Map.NoCountry = new SolidColorBrush(Color.FromRgb(200, 230, 255));
 
-      Map.AddCountryAlpha3();
+      Map.AddCountryAlpha3(8, new SolidColorBrush(Colors.Black), new SolidColorBrush(Colors.White));
     }
   }
 }
