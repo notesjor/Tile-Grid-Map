@@ -22,7 +22,6 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
   /// </summary>
   public partial class TileGridMap : UserControl
   {
-    private SolidColorBrush _noCountry;
     private GridTileMap[] _data;
 
     public TileGridMap()
@@ -31,49 +30,164 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
       InitializeData();
     }
 
+    /// <summary>
+    /// Initializes the data (json serialized GridTileMap[])
+    /// </summary>
+    /// <param name="path">path to json</param>
     public void InitializeData(string path = "TileGridMap.json")
     {
       _data = JsonConvert.DeserializeObject<GridTileMap[]>(File.ReadAllText(path));
     }
 
+    /// <summary>
+    /// Gets all country names.
+    /// </summary>
+    /// <value>All country names.</value>
     public IEnumerable<string> AllCountryNames => _data.Select(x => x.Name);
+
+    /// <summary>
+    /// Gets all country alpha2.
+    /// </summary>
+    /// <value>All country alpha2.</value>
     public IEnumerable<string> AllCountryAlpha2 => _data.Select(x => x.Alpha2);
+
+    /// <summary>
+    /// Gets all country alpha3.
+    /// </summary>
+    /// <value>All country alpha3.</value>
     public IEnumerable<string> AllCountryAlpha3 => _data.Select(x => x.Alpha3);
+
+    /// <summary>
+    /// Gets all country regions.
+    /// </summary>
+    /// <value>All country regions.</value>
     public IEnumerable<string> AllCountryRegions => new HashSet<string>(_data.Select(x => x.Region));
+
+    /// <summary>
+    /// Gets all country sub regions.
+    /// </summary>
+    /// <value>All country sub regions.</value>
     public IEnumerable<string> AllCountrySubRegions => new HashSet<string>(_data.Select(x => x.SubRegion));
+
+    /// <summary>
+    /// Gets all country region codes.
+    /// </summary>
+    /// <value>All country region codes.</value>
     public IEnumerable<int> AllCountryRegionCodes => new HashSet<int>(_data.Select(x => int.Parse(x.RegionCode)));
+
+    /// <summary>
+    /// Gets all country sub region codes.
+    /// </summary>
+    /// <value>All country sub region codes.</value>
     public IEnumerable<int> AllCountrySubRegionCodes => new HashSet<int>(_data.Select(x => int.Parse(x.SubRegionCode)));
 
+    /// <summary>
+    /// Gets all countries of region.
+    /// </summary>
+    /// <param name="region">The region.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfRegion(string region) => _data.Where(x => x.Region == region).Select(x => x.Alpha3);
+
+    /// <summary>
+    /// Gets all countries of sub region.
+    /// </summary>
+    /// <param name="subRegion">The sub region.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfSubRegion(string subRegion) => _data.Where(x => x.SubRegion == subRegion).Select(x => x.Alpha3);
+
+    /// <summary>
+    /// Gets all countries of region code.
+    /// </summary>
+    /// <param name="regionCode">The region code.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfRegionCode(string regionCode) => _data.Where(x => x.RegionCode == regionCode).Select(x => x.Alpha3);
+
+    /// <summary>
+    /// Gets all countries of sub region code.
+    /// </summary>
+    /// <param name="subRegionCode">The sub region code.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfSubRegionCode(string subRegionCode) => _data.Where(x => x.SubRegionCode == subRegionCode).Select(x => x.Alpha3);
+
+    /// <summary>
+    /// Gets all countries of region code.
+    /// </summary>
+    /// <param name="regionCode">The region code.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfRegionCode(int regionCode) => GetAllCountriesOfRegionCode(regionCode.ToString());
+
+    /// <summary>
+    /// Gets all countries of sub region code.
+    /// </summary>
+    /// <param name="subRegionCode">The sub region code.</param>
+    /// <returns>IEnumerable&lt;System.String&gt;.</returns>
     public IEnumerable<string> GetAllCountriesOfSubRegionCode(int subRegionCode) => GetAllCountriesOfSubRegionCode(subRegionCode.ToString());
 
     /// <summary>
     /// Set the color for all NoCountry-cells
     /// </summary>
-    public SolidColorBrush NoCountry
+    public Brush NoCountry
     {
-      get => _noCountry;
-      set
-      {
-        _noCountry = value;
-        foreach (var x in World.Children.OfType<Rectangle>())
-          x.Fill = value;
-      }
+      get => World.Background;
+      set => World.Background = value;
     }
 
-    public IEnumerable<TextBlock> AddCountryNames() => GenerateLabel(x => x.Name);
-    public IEnumerable<TextBlock> AddCountryAlpha2() => GenerateLabel(x => x.Alpha2);
-    public IEnumerable<TextBlock> AddCountryAlpha3() => GenerateLabel(x => x.Alpha3);
-    public IEnumerable<TextBlock> AddCountryRegion() => GenerateLabel(x => x.Region);
-    public IEnumerable<TextBlock> AddCountrySubRegion() => GenerateLabel(x => x.SubRegion);
+    /// <summary>
+    /// Adds the country names.
+    /// </summary>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    public IEnumerable<TextBlock> AddCountryNames(double fontSize, Brush foreground, Brush background) => GenerateLabel(x => x.Name, fontSize, foreground, background);
+
+    /// <summary>
+    /// Adds the country alpha2.
+    /// </summary>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    public IEnumerable<TextBlock> AddCountryAlpha2(double fontSize, Brush foreground, Brush background) => GenerateLabel(x => x.Alpha2, fontSize, foreground, background);
+
+    /// <summary>
+    /// Adds the country alpha3.
+    /// </summary>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    public IEnumerable<TextBlock> AddCountryAlpha3(double fontSize, Brush foreground, Brush background) => GenerateLabel(x => x.Alpha3, fontSize, foreground, background);
+
+    /// <summary>
+    /// Adds the country region.
+    /// </summary>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    public IEnumerable<TextBlock> AddCountryRegion(double fontSize, Brush foreground, Brush background) => GenerateLabel(x => x.Region, fontSize, foreground, background);
+
+    /// <summary>
+    /// Adds the country subregion.
+    /// </summary>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    public IEnumerable<TextBlock> AddCountrySubRegion(double fontSize, Brush foreground, Brush background) => GenerateLabel(x => x.SubRegion, fontSize, foreground, background);
 
     private delegate string AddLabelDelegate(GridTileMap item);
 
-    private IEnumerable<TextBlock> GenerateLabel(AddLabelDelegate func)
+    /// <summary>
+    /// Generates the label foreach country.
+    /// </summary>
+    /// <param name="func">The function.</param>
+    /// <param name="fontSize">Size of the font.</param>
+    /// <param name="foreground">The foreground.</param>
+    /// <param name="background">The background.</param>
+    /// <returns>IEnumerable&lt;TextBlock&gt;.</returns>
+    private IEnumerable<TextBlock> GenerateLabel(AddLabelDelegate func, double fontSize, Brush foreground, Brush background)
     {
       var res = new List<TextBlock>();
       foreach (var x in _data)
@@ -84,10 +198,12 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         var tb = new TextBlock
         {
           Text = func(x),
-          FontSize = 8,
+          FontSize = fontSize,
           VerticalAlignment = VerticalAlignment.Top,
           HorizontalAlignment = HorizontalAlignment.Stretch,
-          TextAlignment = TextAlignment.Center
+          TextAlignment = TextAlignment.Center,
+          Foreground = foreground,
+          Background = background
         };
         grid.Children.Add(tb);
         res.Add(tb);
@@ -164,17 +280,21 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// </summary>
     /// <param name="alpha3">alpha3</param>
     /// <returns>Grid</returns>
-    public Grid GetCountryGrid(string alpha3) => 
+    public Grid GetCountryGrid(string alpha3) =>
       World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3)?.Child as Grid;
 
     /// <summary>
     /// Set all country borders at once
     /// </summary>
     /// <param name="brush">Brush</param>
-    public void SetAllCountryBorder(Brush brush)
+    /// <param name="thickness">border thickness</param>
+    public void SetAllCountryBorder(Brush brush, double thickness = 1)
     {
       foreach (var b in World.Children.OfType<Border>())
+      {
         b.BorderBrush = brush;
+        b.BorderThickness = new Thickness(thickness);
+      }
     }
 
     /// <summary>
@@ -182,11 +302,14 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// </summary>
     /// <param name="alpha3">alpah3</param>
     /// <param name="brush">Brush</param>
-    public void SetCountryBorder(string alpha3, Brush brush)
+    /// <param name="thickness">border thickness</param>
+    public void SetCountryBorder(string alpha3, Brush brush, double thickness = 1)
     {
       var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
-      if (border != null)
-        border.BorderBrush = brush;
+      if (border == null)
+        return;
+      border.BorderBrush = brush;
+      border.BorderThickness = new Thickness(thickness);
     }
 
     /// <summary>
@@ -194,10 +317,66 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// </summary>
     /// <param name="alpha3">alpah3</param>
     /// <param name="brush">Brush</param>
-    public void SetCountryBorder(IEnumerable<string> alpha3, Brush brush)
+    /// <param name="thickness">border thickness</param>
+    public void SetCountryBorder(IEnumerable<string> alpha3, Brush brush, double thickness = 1)
     {
       foreach (var x in alpha3)
-        SetCountryBorder(x, brush);
+        SetCountryBorder(x, brush, thickness);
+    }
+
+    /// <summary>
+    /// Set all country backgrounds at once
+    /// </summary>
+    /// <param name="brush">Brush</param>
+    public void SetAllCountryBackground(Brush brush)
+    {
+      foreach (var b in World.Children.OfType<Border>())
+        ((Grid)b.Child).Background = brush;
+    }
+
+    /// <summary>
+    /// Set the background of a specific country
+    /// </summary>
+    /// <param name="alpha3">alpah3</param>
+    /// <param name="brush">Brush</param>
+    public void SetCountryBackground(string alpha3, Brush brush)
+    {
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
+      if (border != null)
+        ((Grid)border.Child).Background = brush;
+    }
+
+    /// <summary>
+    /// Set the background of all specific countries
+    /// </summary>
+    /// <param name="alpha3">alpah3</param>
+    /// <param name="brush">Brush</param>
+    public void SetCountryBackground(IEnumerable<string> alpha3, Brush brush)
+    {
+      foreach (var x in alpha3)
+        SetCountryBackground(x, brush);
+    }
+
+    /// <summary>
+    /// Fixes the inner border.
+    /// </summary>
+    /// <param name="thickness">The thickness.</param>
+    public void FixInnerBorder(double thickness)
+    {
+      var items = World.Children.OfType<Border>().Select(b => new Tuple<int, int, Border>(Grid.GetColumn(b), Grid.GetRow(b), b)).ToArray();
+      foreach (var item in items)
+      {
+        var lft = item.Item1 != 0 && (from x in items where x.Item1 == item.Item1 - 1 && x.Item2 == item.Item2 select x).FirstOrDefault() != null;
+        var rht = item.Item1 < World.ColumnDefinitions.Count && (from x in items where x.Item1 == item.Item1 + 1 && x.Item2 == item.Item2 select x).FirstOrDefault() != null;
+        var top = item.Item2 != 0 && (from x in items where x.Item1 == item.Item1 && x.Item2 == item.Item2 - 1 select x).FirstOrDefault() != null;
+        var btm = item.Item2 < World.RowDefinitions.Count && (from x in items where x.Item1 == item.Item1 && x.Item2 == item.Item2 + 1 select x).FirstOrDefault() != null;
+
+        item.Item3.BorderThickness = new Thickness(
+          thickness * (lft ? 0.5 : 1), 
+          thickness * (top ? 0.5 : 1),
+          thickness * (rht ? 0.5 : 1), 
+          thickness * (btm ? 0.5 : 1));
+      }
     }
   }
 }

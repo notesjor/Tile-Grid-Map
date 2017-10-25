@@ -39,7 +39,7 @@ namespace TileGridMapJsonToXamlConverter
           var country = (from c in arr where c.Coordinates[0] == x && c.Coordinates[1] == y select c).FirstOrDefault();
           if (country == null)
           {
-            stb.AppendLine($"<Rectangle Grid.Column=\"{i}\" Grid.Row=\"{j}\" Fill=\"White\"/>");
+            // stb.AppendLine($"<Rectangle Grid.Column=\"{i}\" Grid.Row=\"{j}\" Fill=\"White\"/>");
           }
           else
           {
