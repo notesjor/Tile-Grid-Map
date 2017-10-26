@@ -18,13 +18,13 @@ using Newtonsoft.Json;
 namespace CorpusExplorer.Sdk.Extern.TileGridMap
 {
   /// <summary>
-  /// Interaktionslogik für TileGridMapAlpha3.xaml
+  /// Interaktionslogik für TileGridMap.xaml
   /// </summary>
-  public partial class TileGridMap : UserControl
+  public partial class TileGridMapAlpha2 : UserControl
   {
     private GridTileMap[] _data;
 
-    public TileGridMap()
+    public TileGridMapAlpha2()
     {
       InitializeComponent();
       InitializeData();
@@ -86,28 +86,28 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// </summary>
     /// <param name="region">The region.</param>
     /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-    public IEnumerable<string> GetAllCountriesOfRegion(string region) => _data.Where(x => x.Region == region).Select(x => x.Alpha3);
+    public IEnumerable<string> GetAllCountriesOfRegion(string region) => _data.Where(x => x.Region == region).Select(x => x.Alpha2);
 
     /// <summary>
     /// Gets all countries of sub region.
     /// </summary>
     /// <param name="subRegion">The sub region.</param>
     /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-    public IEnumerable<string> GetAllCountriesOfSubRegion(string subRegion) => _data.Where(x => x.SubRegion == subRegion).Select(x => x.Alpha3);
+    public IEnumerable<string> GetAllCountriesOfSubRegion(string subRegion) => _data.Where(x => x.SubRegion == subRegion).Select(x => x.Alpha2);
 
     /// <summary>
     /// Gets all countries of region code.
     /// </summary>
     /// <param name="regionCode">The region code.</param>
     /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-    public IEnumerable<string> GetAllCountriesOfRegionCode(string regionCode) => _data.Where(x => x.RegionCode == regionCode).Select(x => x.Alpha3);
+    public IEnumerable<string> GetAllCountriesOfRegionCode(string regionCode) => _data.Where(x => x.RegionCode == regionCode).Select(x => x.Alpha2);
 
     /// <summary>
     /// Gets all countries of sub region code.
     /// </summary>
     /// <param name="subRegionCode">The sub region code.</param>
     /// <returns>IEnumerable&lt;System.String&gt;.</returns>
-    public IEnumerable<string> GetAllCountriesOfSubRegionCode(string subRegionCode) => _data.Where(x => x.SubRegionCode == subRegionCode).Select(x => x.Alpha3);
+    public IEnumerable<string> GetAllCountriesOfSubRegionCode(string subRegionCode) => _data.Where(x => x.SubRegionCode == subRegionCode).Select(x => x.Alpha2);
 
     /// <summary>
     /// Gets all countries of region code.
@@ -192,7 +192,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
       var res = new List<TextBlock>();
       foreach (var x in _data)
       {
-        var grid = GetCountryGrid(x.Alpha3);
+        var grid = GetCountryGrid(x.Alpha2);
         if (grid == null)
           continue;
         var tb = new TextBlock
@@ -212,76 +212,76 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     }
 
     /// <summary>
-    /// Convert the english country name into alpha3
+    /// Convert the english country name into alpha2
     /// </summary>
     /// <param name="countryName">name of the country</param>
-    /// <returns>alpha3</returns>
-    public string ConvertNameToAlpha3(string countryName) =>
-      (from x in _data where x.Name == countryName select x.Alpha3).FirstOrDefault();
+    /// <returns>alpha2</returns>
+    public string ConvertNameToAlpha2(string countryName) =>
+      (from x in _data where x.Name == countryName select x.Alpha2).FirstOrDefault();
 
     /// <summary>
-    /// Convert the alpha2 country code into alpha3
+    /// Convert the alpha3 country code into alpha2
     /// </summary>
-    /// <param name="alpha2">alpha2 code</param>
-    /// <returns>alpha3</returns>
-    public string ConvertAlpha2ToAlpha3(string alpha2) =>
-      (from x in _data where x.Alpha2 == alpha2 select x.Alpha3).FirstOrDefault();
+    /// <param name="alpha3">alpha3 code</param>
+    /// <returns>alpha2</returns>
+    public string ConvertAlpha3ToAlpha2(string alpha3) =>
+      (from x in _data where x.Alpha3 == alpha3 select x.Alpha2).FirstOrDefault();
 
     /// <summary>
-    /// Convert the tileGridMap-country-code to alpha3
+    /// Convert the tileGridMap-country-code to alpha2
     /// </summary>
     /// <param name="countryCode">tileGridMap-country-code</param>
-    /// <returns>alpha3</returns>
-    public string ConvertCountryCodeToAlpha3(string countryCode) =>
-      (from x in _data where x.CountryCode == countryCode select x.Alpha3).FirstOrDefault();
+    /// <returns>alpha2</returns>
+    public string ConvertCountryCodeToAlpha2(string countryCode) =>
+      (from x in _data where x.CountryCode == countryCode select x.Alpha2).FirstOrDefault();
 
     /// <summary>
-    /// Convert the ISO 3166-2 country code to alpha3
+    /// Convert the ISO 3166-2 country code to alpha2
     /// </summary>
     /// <param name="iso">ISO 3166-2 country code</param>
-    /// <returns>alpha3</returns>
-    public string ConvertIso31662ToAlpha3(string iso) =>
-      (from x in _data where x.Iso31662 == iso || x.Iso31662 == $"ISO 3166-2:{iso}" select x.Alpha3).FirstOrDefault();
+    /// <returns>alpha2</returns>
+    public string ConvertIso31662ToAlpha2(string iso) =>
+      (from x in _data where x.Iso31662 == iso || x.Iso31662 == $"ISO 3166-2:{iso}" select x.Alpha2).FirstOrDefault();
 
     /// <summary>
     /// Get the region information
     /// </summary>
-    /// <param name="alpha3">alpha3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <returns>region (engl. name)</returns>
-    public string GetRegion(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select x.Region).FirstOrDefault();
+    public string GetRegion(string alpha2) =>
+      (from x in _data where x.Alpha2 == alpha2 select x.Region).FirstOrDefault();
 
     /// <summary>
     /// Get the sub region information
     /// </summary>
-    /// <param name="alpha3">alpha3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <returns>sub region (engl. name)</returns>
-    public string GetSubRegion(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select x.SubRegion).FirstOrDefault();
+    public string GetSubRegion(string alpha2) =>
+      (from x in _data where x.Alpha2 == alpha2 select x.SubRegion).FirstOrDefault();
 
     /// <summary>
     /// Get the region code
     /// </summary>
-    /// <param name="alpha3">alpha3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <returns>region code</returns>
-    public int GetRegionCode(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select int.Parse(x.RegionCode)).FirstOrDefault();
+    public int GetRegionCode(string alpha2) =>
+      (from x in _data where x.Alpha2 == alpha2 select int.Parse(x.RegionCode)).FirstOrDefault();
 
     /// <summary>
     /// Get the sub region code
     /// </summary>
-    /// <param name="alpha3">alpha3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <returns>sub region code</returns>
-    public int GetSubRegionCode(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select int.Parse(x.SubRegionCode)).FirstOrDefault();
+    public int GetSubRegionCode(string alpha2) =>
+      (from x in _data where x.Alpha2 == alpha2 select int.Parse(x.SubRegionCode)).FirstOrDefault();
 
     /// <summary>
     /// Get the Grid-UserControl (for full ui customization)
     /// </summary>
-    /// <param name="alpha3">alpha3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <returns>Grid</returns>
-    public Grid GetCountryGrid(string alpha3) =>
-      World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3)?.Child as Grid;
+    public Grid GetCountryGrid(string alpha2) =>
+      World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha2)?.Child as Grid;
 
     /// <summary>
     /// Set all country borders at once
@@ -300,12 +300,12 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <summary>
     /// Set the border of a specific country
     /// </summary>
-    /// <param name="alpha3">alpah3</param>
+    /// <param name="alpha2">alpah3</param>
     /// <param name="brush">Brush</param>
     /// <param name="thickness">border thickness</param>
-    public void SetCountryBorder(string alpha3, Brush brush, double thickness = 1)
+    public void SetCountryBorder(string alpha2, Brush brush, double thickness = 1)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha2);
       if (border == null)
         return;
       border.BorderBrush = brush;
@@ -315,12 +315,12 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <summary>
     /// Set the border of all specific countries
     /// </summary>
-    /// <param name="alpha3">alpah3</param>
+    /// <param name="alpha2">alpah3</param>
     /// <param name="brush">Brush</param>
     /// <param name="thickness">border thickness</param>
-    public void SetCountryBorder(IEnumerable<string> alpha3, Brush brush, double thickness = 1)
+    public void SetCountryBorder(IEnumerable<string> alpha2, Brush brush, double thickness = 1)
     {
-      foreach (var x in alpha3)
+      foreach (var x in alpha2)
         SetCountryBorder(x, brush, thickness);
     }
 
@@ -337,11 +337,11 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <summary>
     /// Set the background of a specific country
     /// </summary>
-    /// <param name="alpha3">alpah3</param>
+    /// <param name="alpha2">alpah2</param>
     /// <param name="brush">Brush</param>
-    public void SetCountryBackground(string alpha3, Brush brush)
+    public void SetCountryBackground(string alpha2, Brush brush)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha2);
       if (border != null)
         ((Grid)border.Child).Background = brush;
     }
@@ -349,11 +349,11 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <summary>
     /// Set the background of all specific countries
     /// </summary>
-    /// <param name="alpha3">alpah3</param>
+    /// <param name="alpha2">alpha2</param>
     /// <param name="brush">Brush</param>
-    public void SetCountryBackground(IEnumerable<string> alpha3, Brush brush)
+    public void SetCountryBackground(IEnumerable<string> alpha2, Brush brush)
     {
-      foreach (var x in alpha3)
+      foreach (var x in alpha2)
         SetCountryBackground(x, brush);
     }
 
