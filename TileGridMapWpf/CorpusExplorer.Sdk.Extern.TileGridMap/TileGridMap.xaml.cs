@@ -281,7 +281,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>Grid</returns>
     public Grid GetCountryGrid(string alpha3) =>
-      World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3)?.Child as Grid;
+      World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3)?.Child as Grid;
 
     /// <summary>
     /// Set all country borders at once
@@ -305,7 +305,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="thickness">border thickness</param>
     public void SetCountryBorder(string alpha3, Brush brush, double thickness = 1)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
       if (border == null)
         return;
       border.BorderBrush = brush;
@@ -331,7 +331,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     public void SetAllCountryBackground(Brush brush)
     {
       foreach (var b in World.Children.OfType<Border>())
-        ((Grid)b.Child).Background = brush;
+        b.Background = brush;
     }
 
     /// <summary>
@@ -341,7 +341,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="brush">Brush</param>
     public void SetCountryBackground(string alpha3, Brush brush)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => ((Grid)b.Child).Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
       if (border != null)
         ((Grid)border.Child).Background = brush;
     }

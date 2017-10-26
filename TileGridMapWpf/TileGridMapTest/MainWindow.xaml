@@ -8,8 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
   <Grid>
-
-    <TileGridMap:TileGridMapAlpha3 HorizontalAlignment="Stretch" VerticalAlignment="Stretch" x:Name="Map"/>
-
+    <TileGridMap:TileGridMap x:Name="Map" />
   </Grid>
 </Window>

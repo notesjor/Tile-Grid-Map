@@ -27,6 +27,18 @@ namespace TileGridMapTest
 
     private void Window_Loaded(object sender, RoutedEventArgs e)
     {
+      /*
+      RealMap.SetAllCountryBackground(new SolidColorBrush(Colors.Black));
+      var countries = RealMap.AllCountryAlpha2;
+
+      var rnd = new Random();
+
+      foreach (var country in countries)
+      {
+        RealMap.SetCountryBackground(country, new SolidColorBrush(Color.FromArgb((byte)rnd.Next(255), 0,0,0)));
+      }
+      */
+
       Map.SetCountryBorder(Map.GetAllCountriesOfRegion("Asia"), new SolidColorBrush(Color.FromRgb(255, 204, 0)));
       Map.SetCountryBorder(Map.GetAllCountriesOfRegion("Europe"), new SolidColorBrush(Color.FromRgb(0, 201, 255)));
       Map.SetCountryBorder(Map.GetAllCountriesOfRegion("Africa"), new SolidColorBrush(Color.FromRgb(0, 238, 153)));
