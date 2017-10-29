@@ -8,6 +8,6 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="350" Width="525" Loaded="Window_Loaded">
   <Grid>
-    <TileGridMap:TileGridMap x:Name="Map" />
+    <TileGridMap:RealMap x:Name="Map" />
   </Grid>
 </Window>

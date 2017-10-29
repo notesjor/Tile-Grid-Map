@@ -378,5 +378,35 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
           thickness * (btm ? 0.5 : 1));
       }
     }
+
+    private void ZoomOut_Executed(object sender, ExecutedRoutedEventArgs e)
+    {
+      zoom.ZoomOut_Executed(sender, e);
+    }
+
+    private void ZoomIn_Executed(object sender, ExecutedRoutedEventArgs e)
+    {
+      zoom.ZoomIn_Executed(sender, e);
+    }
+
+    private void zoomAndPanControl_MouseDown(object sender, MouseButtonEventArgs e)
+    {
+      zoom.zoomAndPanControl_MouseDown(sender, e);
+    }
+
+    private void zoomAndPanControl_MouseUp(object sender, MouseButtonEventArgs e)
+    {
+      zoom.zoomAndPanControl_MouseUp(sender, e);
+    }
+
+    private void zoomAndPanControl_MouseMove(object sender, MouseEventArgs e)
+    {
+      zoom.zoomAndPanControl_MouseMove(sender, e);
+    }
+
+    private void zoomAndPanControl_MouseWheel(object sender, MouseWheelEventArgs e)
+    {
+      zoom.zoomAndPanControl_MouseWheel(sender, e);
+    }
   }
 }

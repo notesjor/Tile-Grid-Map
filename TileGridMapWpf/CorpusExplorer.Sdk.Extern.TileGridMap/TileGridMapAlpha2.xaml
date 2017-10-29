@@ -4,642 +4,685 @@
              xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
              xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
              xmlns:local="clr-namespace:CorpusExplorer.Sdk.Extern.TileGridMap"
+             xmlns:ZoomAndPan="clr-namespace:ZoomAndPan;assembly=ZoomAndPan"
              mc:Ignorable="d" 
-             d:DesignHeight="460" d:DesignWidth="560">
-  <Grid x:Name="World" Margin="0" ShowGridLines="False" SnapsToDevicePixels="True">
-    <Grid.ColumnDefinitions>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-      <ColumnDefinition></ColumnDefinition>
-    </Grid.ColumnDefinitions>
-    <Grid.RowDefinitions>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-      <RowDefinition></RowDefinition>
-    </Grid.RowDefinitions>
-    <Border x:Name="CAN" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="USA" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="1">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MEX" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="2">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GTM" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SLV" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BLZ" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="2">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="HND" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NIC" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CRI" BorderThickness="0" BorderBrush="White" Grid.Column="2" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BHS" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="1">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CUB" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="2">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="JAM" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PAN" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="HTI" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="COL" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ECU" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PER" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DOM" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KNA" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="VEN" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GUY" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BOL" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PRY" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CHL" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ARG" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ATG" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LCA" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="VCT" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DMA" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GRD" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TTO" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SUR" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="URY" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GRL" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BRB" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BRA" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ISL" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="IRL" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CPV" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GBR" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PRT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MLT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MRT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GNB" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GIN" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="STP" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="FRA" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ESP" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MAR" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GMB" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SLE" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LBR" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CIV" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NLD" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BEL" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LUX" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ITA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DZA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SEN" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BFA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GHA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NGA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GNQ" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="AGO" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DNK" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="2">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DEU" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CHE" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SVN" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="HRV" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TUN" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MLI" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TCD" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TGO" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CMR" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="COG" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GAB" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ZMB" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NOR" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="POL" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CZE" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="AUT" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BIH" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MNE" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ALB" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LBY" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NER" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SSD" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BEN" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="COD" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BDI" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MWI" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BWA" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NAM" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ATA" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="22">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SWE" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LTU" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SVK" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="HUN" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SRB" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="XKX" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GRC" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="EGY" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SDN" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ERI" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CAF" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="UGA" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="RWA" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MOZ" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ZWE" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SWZ" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ZAF" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="19">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="FIN" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="0">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="EST" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="1">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LVA" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="2">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BLR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="UKR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ROU" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BGR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MKD" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CYP" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="DJI" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ETH" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KEN" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TZA" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LSO" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MDA" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TUR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="JOR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LBN" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ISR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="YEM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SOM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SYC" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="COM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SYR" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KWT" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SAU" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="QAT" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="OMN" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MDG" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MUS" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="19">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ARM" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="IRQ" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="IRN" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BHR" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="ARE" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="GEO" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="AZE" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PAK" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MDV" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="UZB" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TKM" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="AFG" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="IND" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LKA" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KGZ" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TJK" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BGD" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NPL" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KAZ" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="CHN" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BTN" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MMR" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="7">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="THA" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MYS" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SGP" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="AUS" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="RUS" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="3">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MNG" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="4">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PRK" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KOR" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="6">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="LAO" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KHM" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="9">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="BRN" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="11">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="IDN" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="12">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TLS" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="13">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PLW" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PNG" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="VNM" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="8">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="PHL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="10">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="MHL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="14">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="FSM" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="15">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NRU" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="SLB" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="VUT" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="NZL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="20">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="JPN" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="5">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="KIR" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="16">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TUV" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="FJI" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="WSM" BorderThickness="0" BorderBrush="White" Grid.Column="27" Grid.Row="17">
-      <Grid Background="White"/>
-    </Border>
-    <Border x:Name="TON" BorderThickness="0" BorderBrush="White" Grid.Column="27" Grid.Row="18">
-      <Grid Background="White"/>
-    </Border>
-  </Grid>
+             d:DesignHeight="920" d:DesignWidth="1020"
+             
+             FocusManager.FocusedElement="{Binding ElementName=scroller}"
+>
+  <UserControl.Resources>
+    <RoutedUICommand x:Key="Commands.ZoomOut" />
+    <RoutedUICommand x:Key="Commands.ZoomIn" />
+  </UserControl.Resources>
 
+  <UserControl.InputBindings>
+    <KeyBinding
+      Key="Minus"
+      Command="{StaticResource Commands.ZoomOut}"
+    />
+    <KeyBinding
+      Key="Plus"
+      Command="{StaticResource Commands.ZoomIn}"
+    />
+  </UserControl.InputBindings>
 
+  <UserControl.CommandBindings>
+    <CommandBinding 
+      Command="{StaticResource Commands.ZoomOut}" 
+      Executed="ZoomOut_Executed" 
+    />
+    <CommandBinding 
+      Command="{StaticResource Commands.ZoomIn}" 
+      Executed="ZoomIn_Executed" 
+    />
+  </UserControl.CommandBindings>
 
+  <ScrollViewer 
+    x:Name="scroller"
+    CanContentScroll="True"
+    VerticalScrollBarVisibility="Visible"
+    HorizontalScrollBarVisibility="Visible">
+    <ZoomAndPan:ZoomAndPanControl MouseDown="zoomAndPanControl_MouseDown"
+                                  MouseUp="zoomAndPanControl_MouseUp"
+                      
+                                  MouseMove="zoomAndPanControl_MouseMove"
+                                  MouseWheel="zoomAndPanControl_MouseWheel"
+                                  x:Name="zoom">
+      <Viewbox>
+        <Grid x:Name="World" Margin="0" ShowGridLines="False" SnapsToDevicePixels="True">
+          <Grid.ColumnDefinitions>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+          </Grid.ColumnDefinitions>
+          <Grid.RowDefinitions>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+            <RowDefinition></RowDefinition>
+          </Grid.RowDefinitions>
+          <Border x:Name="CAN" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="USA" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="1">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MEX" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="2">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GTM" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SLV" BorderThickness="0" BorderBrush="White" Grid.Column="0" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BLZ" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="2">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="HND" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NIC" BorderThickness="0" BorderBrush="White" Grid.Column="1" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CRI" BorderThickness="0" BorderBrush="White" Grid.Column="2" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BHS" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="1">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CUB" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="2">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="JAM" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PAN" BorderThickness="0" BorderBrush="White" Grid.Column="3" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="HTI" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="COL" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ECU" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PER" BorderThickness="0" BorderBrush="White" Grid.Column="4" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DOM" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KNA" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="VEN" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GUY" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BOL" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PRY" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CHL" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ARG" BorderThickness="0" BorderBrush="White" Grid.Column="5" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ATG" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LCA" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="VCT" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DMA" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GRD" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TTO" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SUR" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="URY" BorderThickness="0" BorderBrush="White" Grid.Column="6" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GRL" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BRB" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BRA" BorderThickness="0" BorderBrush="White" Grid.Column="7" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ISL" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="IRL" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CPV" BorderThickness="0" BorderBrush="White" Grid.Column="9" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GBR" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PRT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MLT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MRT" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GNB" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GIN" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="STP" BorderThickness="0" BorderBrush="White" Grid.Column="10" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="FRA" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ESP" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MAR" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GMB" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SLE" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LBR" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CIV" BorderThickness="0" BorderBrush="White" Grid.Column="11" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NLD" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BEL" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LUX" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ITA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DZA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SEN" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BFA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GHA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NGA" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GNQ" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="AGO" BorderThickness="0" BorderBrush="White" Grid.Column="12" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DNK" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="2">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DEU" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CHE" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SVN" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="HRV" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TUN" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MLI" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TCD" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TGO" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CMR" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="COG" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GAB" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ZMB" BorderThickness="0" BorderBrush="White" Grid.Column="13" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NOR" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="POL" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CZE" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="AUT" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BIH" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MNE" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ALB" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LBY" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NER" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SSD" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BEN" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="COD" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BDI" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MWI" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BWA" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NAM" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ATA" BorderThickness="0" BorderBrush="White" Grid.Column="14" Grid.Row="22">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SWE" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LTU" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SVK" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="HUN" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SRB" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="XKX" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GRC" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="EGY" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SDN" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ERI" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CAF" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="UGA" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="RWA" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MOZ" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ZWE" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SWZ" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ZAF" BorderThickness="0" BorderBrush="White" Grid.Column="15" Grid.Row="19">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="FIN" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="0">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="EST" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="1">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LVA" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="2">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BLR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="UKR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ROU" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BGR" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MKD" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CYP" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="DJI" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ETH" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KEN" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TZA" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LSO" BorderThickness="0" BorderBrush="White" Grid.Column="16" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MDA" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TUR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="JOR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LBN" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ISR" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="YEM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SOM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SYC" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="COM" BorderThickness="0" BorderBrush="White" Grid.Column="17" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SYR" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KWT" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SAU" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="QAT" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="OMN" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MDG" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MUS" BorderThickness="0" BorderBrush="White" Grid.Column="18" Grid.Row="19">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ARM" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="IRQ" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="IRN" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BHR" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="ARE" BorderThickness="0" BorderBrush="White" Grid.Column="19" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="GEO" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="AZE" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PAK" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MDV" BorderThickness="0" BorderBrush="White" Grid.Column="20" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="UZB" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TKM" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="AFG" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="IND" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LKA" BorderThickness="0" BorderBrush="White" Grid.Column="21" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KGZ" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TJK" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BGD" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NPL" BorderThickness="0" BorderBrush="White" Grid.Column="22" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KAZ" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="CHN" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BTN" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MMR" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="7">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="THA" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MYS" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SGP" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="AUS" BorderThickness="0" BorderBrush="White" Grid.Column="23" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="RUS" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="3">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MNG" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="4">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PRK" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KOR" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="6">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="LAO" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KHM" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="9">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="BRN" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="11">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="IDN" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="12">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TLS" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="13">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PLW" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PNG" BorderThickness="0" BorderBrush="White" Grid.Column="24" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="VNM" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="8">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="PHL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="10">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="MHL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="14">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="FSM" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="15">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NRU" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="SLB" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="VUT" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="NZL" BorderThickness="0" BorderBrush="White" Grid.Column="25" Grid.Row="20">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="JPN" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="5">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="KIR" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="16">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TUV" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="FJI" BorderThickness="0" BorderBrush="White" Grid.Column="26" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="WSM" BorderThickness="0" BorderBrush="White" Grid.Column="27" Grid.Row="17">
+            <Grid Background="White"/>
+          </Border>
+          <Border x:Name="TON" BorderThickness="0" BorderBrush="White" Grid.Column="27" Grid.Row="18">
+            <Grid Background="White"/>
+          </Border>
+        </Grid>
+      </Viewbox>
+    </ZoomAndPan:ZoomAndPanControl>
+  </ScrollViewer>
 </UserControl>
