@@ -13,7 +13,6 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
-using Newtonsoft.Json;
 
 namespace CorpusExplorer.Sdk.Extern.TileGridMap
 {
@@ -27,18 +26,9 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     public TileGridMap()
     {
       InitializeComponent();
-      InitializeData();
+      _data = StaticCountryData.Data;
     }
-
-    /// <summary>
-    /// Initializes the data (json serialized GridTileMap[])
-    /// </summary>
-    /// <param name="path">path to json</param>
-    public void InitializeData(string path = "TileGridMap.json")
-    {
-      _data = JsonConvert.DeserializeObject<GridTileMap[]>(File.ReadAllText(path));
-    }
-
+    
     /// <summary>
     /// Gets all country names.
     /// </summary>
