@@ -46,8 +46,11 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         if (element is Path)
         {
           var p = element as Path;
-          if (!string.IsNullOrEmpty(p.Name) && p.Name.Length == 2)
-            _dic.Add(p.Name, p);
+          if (string.IsNullOrEmpty(p.Name) || p.Name.Length != 2) 
+            continue;
+          p.StrokeThickness = 1;
+          p.Stroke = new SolidColorBrush(Colors.Black);
+          _dic.Add(p.Name, p);
         }
       }
     }
@@ -107,10 +110,11 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="brush">Brush</param>
     public void SetCountryBackground(string alpha2, Brush brush)
     {
-      if (!_dic.ContainsKey(alpha2))
+      var key = alpha2.ToLower();
+      if (!_dic.ContainsKey(key))
         return;
 
-      var country = _dic[alpha2];
+      var country = _dic[key];
       if (country is Path)
         ((Path)country).Fill = brush;
       if (country is Canvas)

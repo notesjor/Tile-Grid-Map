@@ -19,7 +19,7 @@
     <OutputPath>bin\Debug\</OutputPath>
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
-    <WarningLevel>4</WarningLevel>
+    <WarningLevel>3</WarningLevel>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -56,7 +56,7 @@
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\CorpusExplorer.Sdk.Extern.TileGridMap\CorpusExplorer.Sdk.Extern.TileGridMap.csproj">
-      <Project>{17b37f1b-616c-42af-ab9a-ca4cb35706a1}</Project>
+      <Project>{17B37F1B-616C-42AF-AB9A-CA4CB35706A1}</Project>
       <Name>CorpusExplorer.Sdk.Extern.TileGridMap</Name>
     </ProjectReference>
   </ItemGroup>

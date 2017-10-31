@@ -13,15 +13,25 @@ namespace TileGridMapJsonToXamlConverter
   {
     static void Main(string[] args)
     {
-      var arr = JsonConvert.DeserializeObject<GridTileMap[]>(File.ReadAllText(@"TileGridMap.json"));
-      arr = (from x in arr where x.Coordinates != null && x.Coordinates.Length == 2 select x).ToArray();
-
-      ToXaml(arr);
-      ToCSharpCode(arr);
+      try
+      {
+        ToXaml();
+        ToCSharpCode();
+      }
+      catch(Exception ex)
+      {
+        Console.WriteLine(ex.Message);
+        Console.WriteLine(ex.StackTrace);
+      }
+      Console.WriteLine("!END!");
+      Console.ReadLine();
     }
 
-    private static void ToCSharpCode(GridTileMap[] arr)
+    private static void ToCSharpCode()
     {
+      var arr = JsonConvert.DeserializeObject<GridTileMap[]>(File.ReadAllText(@"TileGridMap.json"));
+      arr = (from x in arr where x.Coordinates != null && x.Coordinates.Length == 2 select x).ToArray();
+      
       var stb = new StringBuilder();
       stb.Append("private GridTileMap[] _data = new []{");
 
@@ -46,8 +56,9 @@ namespace TileGridMapJsonToXamlConverter
       File.WriteAllText("output.cs", stb.ToString(), Encoding.UTF8);
     }
 
-    private static void ToXaml(GridTileMap[] arr)
+    private static void ToXaml()
     {
+      var arr = StaticCountryData.Data;
       var xm = arr.Select(x => x.Coordinates[0]).Concat(new[] { 0 }).Max();
       var ym = arr.Select(x => x.Coordinates[1]).Concat(new[] { 0 }).Max();
 
@@ -76,7 +87,7 @@ namespace TileGridMapJsonToXamlConverter
           else
           {
             stb.AppendLine(
-              $"<Border x:Name=\"{country.Alpha3}\" BorderThickness=\"0\" BorderBrush=\"White\" Grid.Column=\"{i}\" Grid.Row=\"{j}\"><Grid Background=\"White\"/></Border>");
+              $"<Border x:Name=\"{country.Alpha2}\" BorderThickness=\"0\" BorderBrush=\"White\" Grid.Column=\"{i}\" Grid.Row=\"{j}\"><Grid Background=\"White\"/></Border>");
           }
         }
       }
