@@ -28,7 +28,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
       InitializeComponent();
       _data = StaticCountryData.Data;
     }
-    
+
     /// <summary>
     /// Gets all country names.
     /// </summary>
@@ -185,6 +185,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         var grid = GetCountryGrid(x.Alpha3);
         if (grid == null)
           continue;
+        grid.ToolTip = new MapToolTip { Label = func(x) };
         var tb = new TextBlock
         {
           Text = func(x),
@@ -215,7 +216,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha2">alpha2 code</param>
     /// <returns>alpha3</returns>
     public string ConvertAlpha2ToAlpha3(string alpha2) =>
-      (from x in _data where x.Alpha2 == alpha2 select x.Alpha3).FirstOrDefault();
+      (from x in _data where x.Alpha2 == alpha2.ToUpper() select x.Alpha3).FirstOrDefault();
 
     /// <summary>
     /// Convert the tileGridMap-country-code to alpha3
@@ -239,7 +240,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>region (engl. name)</returns>
     public string GetRegion(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select x.Region).FirstOrDefault();
+      (from x in _data where x.Alpha3 == alpha3.ToUpper() select x.Region).FirstOrDefault();
 
     /// <summary>
     /// Get the sub region information
@@ -247,7 +248,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>sub region (engl. name)</returns>
     public string GetSubRegion(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select x.SubRegion).FirstOrDefault();
+      (from x in _data where x.Alpha3 == alpha3.ToUpper() select x.SubRegion).FirstOrDefault();
 
     /// <summary>
     /// Get the region code
@@ -255,7 +256,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>region code</returns>
     public int GetRegionCode(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select int.Parse(x.RegionCode)).FirstOrDefault();
+      (from x in _data where x.Alpha3 == alpha3.ToUpper() select int.Parse(x.RegionCode)).FirstOrDefault();
 
     /// <summary>
     /// Get the sub region code
@@ -263,7 +264,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>sub region code</returns>
     public int GetSubRegionCode(string alpha3) =>
-      (from x in _data where x.Alpha3 == alpha3 select int.Parse(x.SubRegionCode)).FirstOrDefault();
+      (from x in _data where x.Alpha3 == alpha3.ToUpper() select int.Parse(x.SubRegionCode)).FirstOrDefault();
 
     /// <summary>
     /// Get the Grid-UserControl (for full ui customization)
@@ -271,7 +272,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="alpha3">alpha3</param>
     /// <returns>Grid</returns>
     public Grid GetCountryGrid(string alpha3) =>
-      World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3)?.Child as Grid;
+      World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3.ToUpper())?.Child as Grid;
 
     /// <summary>
     /// Set all country borders at once
@@ -295,7 +296,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="thickness">border thickness</param>
     public void SetCountryBorder(string alpha3, Brush brush, double thickness = 1)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3.ToUpper());
       if (border == null)
         return;
       border.BorderBrush = brush;
@@ -331,7 +332,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     /// <param name="brush">Brush</param>
     public void SetCountryBackground(string alpha3, Brush brush)
     {
-      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3);
+      var border = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3.ToUpper());
       if (border != null)
         ((Grid)border.Child).Background = brush;
     }
@@ -345,6 +346,23 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
     {
       foreach (var x in alpha3)
         SetCountryBackground(x, brush);
+    }
+
+    /// <summary>
+    /// Set the value of a specific country
+    /// </summary>
+    /// <param name="alpha3">alpah3</param>
+    /// <param name="value">Value</param>
+    public void SetCountryValue(string alpha3, double value)
+    {
+      var grid = World.Children.OfType<Border>().FirstOrDefault(b => b.Name == alpha3.ToUpper())?.Child as Grid;
+      if (grid == null) 
+        return;
+      
+      if (grid.ToolTip == null)
+        grid.ToolTip = new MapToolTip {Label = alpha3, Value = value.ToString()};
+      else
+        ((MapToolTip) grid.ToolTip).Value = value.ToString();
     }
 
     /// <summary>
@@ -362,9 +380,9 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         var btm = item.Item2 < World.RowDefinitions.Count && (from x in items where x.Item1 == item.Item1 && x.Item2 == item.Item2 + 1 select x).FirstOrDefault() != null;
 
         item.Item3.BorderThickness = new Thickness(
-          thickness * (lft ? 0.5 : 1), 
+          thickness * (lft ? 0.5 : 1),
           thickness * (top ? 0.5 : 1),
-          thickness * (rht ? 0.5 : 1), 
+          thickness * (rht ? 0.5 : 1),
           thickness * (btm ? 0.5 : 1));
       }
     }

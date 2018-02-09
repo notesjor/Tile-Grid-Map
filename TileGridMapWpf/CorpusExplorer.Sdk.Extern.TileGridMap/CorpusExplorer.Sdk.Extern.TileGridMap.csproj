@@ -67,6 +67,7 @@
     </Page>
     <Compile Include="EasyCountryCodeMapper.cs" />
     <Compile Include="GridTileMap.cs" />
+    <Compile Include="MapToolTip.cs" />
     <Compile Include="RealMap.xaml.cs">
       <DependentUpon>RealMap.xaml</DependentUpon>
     </Compile>
