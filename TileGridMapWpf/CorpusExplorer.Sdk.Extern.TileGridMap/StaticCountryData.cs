@@ -1,14 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace CorpusExplorer.Sdk.Extern.TileGridMap
+﻿namespace CorpusExplorer.Sdk.Extern.TileGridMap
 {
   public static class StaticCountryData
   {
-    public static GridTileMap[] Data = new[]
+    public static GridTileMap[] Data =
     {
       new GridTileMap
       {
@@ -21,7 +15,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -34,7 +28,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -47,7 +41,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -60,7 +54,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -73,7 +67,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "",
         RegionCode = "",
         SubRegion = "",
-        SubRegionCode = "",
+        SubRegionCode = ""
       },
       new GridTileMap
       {
@@ -86,7 +80,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -99,7 +93,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -112,7 +106,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -125,7 +119,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Australia and New Zealand",
-        SubRegionCode = "053",
+        SubRegionCode = "053"
       },
       new GridTileMap
       {
@@ -138,7 +132,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -151,7 +145,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -164,7 +158,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -177,7 +171,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -190,7 +184,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -203,7 +197,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -216,7 +210,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -229,7 +223,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -242,7 +236,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -255,7 +249,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -268,7 +262,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -281,7 +275,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -294,7 +288,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -307,7 +301,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Southern Africa",
-        SubRegionCode = "018",
+        SubRegionCode = "018"
       },
       new GridTileMap
       {
@@ -320,7 +314,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -333,7 +327,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -346,7 +340,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -359,7 +353,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -372,7 +366,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -385,7 +379,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -398,7 +392,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -411,7 +405,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Northern America",
-        SubRegionCode = "021",
+        SubRegionCode = "021"
       },
       new GridTileMap
       {
@@ -424,7 +418,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -437,7 +431,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -450,7 +444,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -463,7 +457,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -476,7 +470,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Eastern Asia",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -489,7 +483,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -502,7 +496,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -515,7 +509,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -528,7 +522,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -541,7 +535,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -554,7 +548,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -567,7 +561,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -580,7 +574,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -593,7 +587,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -606,7 +600,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -619,7 +613,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -632,7 +626,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -645,7 +639,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -658,7 +652,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -671,7 +665,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -684,7 +678,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -697,7 +691,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -710,7 +704,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -723,7 +717,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -736,7 +730,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -749,7 +743,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -762,7 +756,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Melanesia",
-        SubRegionCode = "054",
+        SubRegionCode = "054"
       },
       new GridTileMap
       {
@@ -775,7 +769,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -788,7 +782,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -801,7 +795,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -814,7 +808,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -827,7 +821,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -840,7 +834,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -853,7 +847,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -866,7 +860,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -879,7 +873,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Northern America",
-        SubRegionCode = "021",
+        SubRegionCode = "021"
       },
       new GridTileMap
       {
@@ -892,7 +886,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -905,7 +899,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -918,7 +912,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -931,7 +925,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -944,7 +938,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -957,7 +951,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -970,7 +964,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -983,7 +977,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -996,7 +990,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -1009,7 +1003,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -1022,7 +1016,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -1035,7 +1029,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -1048,7 +1042,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1061,7 +1055,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -1074,7 +1068,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1087,7 +1081,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1100,7 +1094,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -1113,7 +1107,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Eastern Asia",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -1126,7 +1120,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1139,7 +1133,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Central Asia",
-        SubRegionCode = "143",
+        SubRegionCode = "143"
       },
       new GridTileMap
       {
@@ -1152,7 +1146,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1165,7 +1159,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Micronesia",
-        SubRegionCode = "057",
+        SubRegionCode = "057"
       },
       new GridTileMap
       {
@@ -1178,7 +1172,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Eastern Asia",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -1191,7 +1185,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Eastern Asia",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -1204,7 +1198,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "142",
         SubRegion = "Southern Europe",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -1217,7 +1211,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1230,7 +1224,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Central Asia",
-        SubRegionCode = "143",
+        SubRegionCode = "143"
       },
       new GridTileMap
       {
@@ -1243,7 +1237,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -1256,7 +1250,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -1269,7 +1263,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1282,7 +1276,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Southern Africa",
-        SubRegionCode = "018",
+        SubRegionCode = "018"
       },
       new GridTileMap
       {
@@ -1295,7 +1289,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1308,7 +1302,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -1321,7 +1315,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -1334,7 +1328,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -1347,7 +1341,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1360,7 +1354,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1373,7 +1367,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1386,7 +1380,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -1399,7 +1393,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -1412,7 +1406,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1425,7 +1419,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1438,7 +1432,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Micronesia",
-        SubRegionCode = "057",
+        SubRegionCode = "057"
       },
       new GridTileMap
       {
@@ -1451,7 +1445,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1464,7 +1458,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1477,7 +1471,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -1490,7 +1484,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Micronesia",
-        SubRegionCode = "057",
+        SubRegionCode = "057"
       },
       new GridTileMap
       {
@@ -1503,7 +1497,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -1516,7 +1510,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Eastern Asia",
-        SubRegionCode = "030",
+        SubRegionCode = "030"
       },
       new GridTileMap
       {
@@ -1529,7 +1523,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1542,7 +1536,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -1555,7 +1549,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1568,7 +1562,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -1581,7 +1575,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Southern Africa",
-        SubRegionCode = "018",
+        SubRegionCode = "018"
       },
       new GridTileMap
       {
@@ -1594,7 +1588,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Micronesia",
-        SubRegionCode = "057",
+        SubRegionCode = "057"
       },
       new GridTileMap
       {
@@ -1607,7 +1601,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -1620,7 +1614,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -1633,7 +1627,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Australia and New Zealand",
-        SubRegionCode = "053",
+        SubRegionCode = "053"
       },
       new GridTileMap
       {
@@ -1646,7 +1640,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -1659,7 +1653,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1672,7 +1666,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1685,7 +1679,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -1698,7 +1692,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1711,7 +1705,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -1724,7 +1718,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Micronesia",
-        SubRegionCode = "057",
+        SubRegionCode = "057"
       },
       new GridTileMap
       {
@@ -1737,7 +1731,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Central America",
-        SubRegionCode = "013",
+        SubRegionCode = "013"
       },
       new GridTileMap
       {
@@ -1750,7 +1744,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Melanesia",
-        SubRegionCode = "054",
+        SubRegionCode = "054"
       },
       new GridTileMap
       {
@@ -1763,7 +1757,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -1776,7 +1770,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -1789,7 +1783,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -1802,7 +1796,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -1815,7 +1809,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1828,7 +1822,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1841,7 +1835,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -1854,7 +1848,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -1867,7 +1861,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1880,7 +1874,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -1893,7 +1887,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -1906,7 +1900,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -1919,7 +1913,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Polynesia",
-        SubRegionCode = "061",
+        SubRegionCode = "061"
       },
       new GridTileMap
       {
@@ -1932,7 +1926,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Middle Africa",
-        SubRegionCode = "017",
+        SubRegionCode = "017"
       },
       new GridTileMap
       {
@@ -1945,7 +1939,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -1958,7 +1952,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -1971,7 +1965,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -1984,7 +1978,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -1997,7 +1991,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -2010,7 +2004,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -2023,7 +2017,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -2036,7 +2030,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -2049,7 +2043,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Melanesia",
-        SubRegionCode = "054",
+        SubRegionCode = "054"
       },
       new GridTileMap
       {
@@ -2062,7 +2056,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -2075,7 +2069,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Southern Africa",
-        SubRegionCode = "018",
+        SubRegionCode = "018"
       },
       new GridTileMap
       {
@@ -2088,7 +2082,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -2101,7 +2095,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Southern Europe",
-        SubRegionCode = "039",
+        SubRegionCode = "039"
       },
       new GridTileMap
       {
@@ -2114,7 +2108,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Southern Asia",
-        SubRegionCode = "034",
+        SubRegionCode = "034"
       },
       new GridTileMap
       {
@@ -2127,7 +2121,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -2140,7 +2134,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -2153,7 +2147,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Southern Africa",
-        SubRegionCode = "018",
+        SubRegionCode = "018"
       },
       new GridTileMap
       {
@@ -2166,7 +2160,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -2179,7 +2173,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Western Europe",
-        SubRegionCode = "155",
+        SubRegionCode = "155"
       },
       new GridTileMap
       {
@@ -2192,7 +2186,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -2205,7 +2199,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Central Asia",
-        SubRegionCode = "143",
+        SubRegionCode = "143"
       },
       new GridTileMap
       {
@@ -2218,7 +2212,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -2231,7 +2225,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -2244,7 +2238,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -2257,7 +2251,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Western Africa",
-        SubRegionCode = "011",
+        SubRegionCode = "011"
       },
       new GridTileMap
       {
@@ -2270,7 +2264,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Polynesia",
-        SubRegionCode = "061",
+        SubRegionCode = "061"
       },
       new GridTileMap
       {
@@ -2283,7 +2277,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Caribbean",
-        SubRegionCode = "029",
+        SubRegionCode = "029"
       },
       new GridTileMap
       {
@@ -2296,7 +2290,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Northern Africa",
-        SubRegionCode = "015",
+        SubRegionCode = "015"
       },
       new GridTileMap
       {
@@ -2309,7 +2303,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -2322,7 +2316,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Central Asia",
-        SubRegionCode = "143",
+        SubRegionCode = "143"
       },
       new GridTileMap
       {
@@ -2335,7 +2329,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Polynesia",
-        SubRegionCode = "061",
+        SubRegionCode = "061"
       },
       new GridTileMap
       {
@@ -2348,7 +2342,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -2361,7 +2355,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Eastern Europe",
-        SubRegionCode = "151",
+        SubRegionCode = "151"
       },
       new GridTileMap
       {
@@ -2374,7 +2368,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -2387,7 +2381,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Europe",
         RegionCode = "150",
         SubRegion = "Northern Europe",
-        SubRegionCode = "154",
+        SubRegionCode = "154"
       },
       new GridTileMap
       {
@@ -2400,7 +2394,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "Northern America",
-        SubRegionCode = "021",
+        SubRegionCode = "021"
       },
       new GridTileMap
       {
@@ -2413,7 +2407,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -2426,7 +2420,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Central Asia",
-        SubRegionCode = "143",
+        SubRegionCode = "143"
       },
       new GridTileMap
       {
@@ -2439,7 +2433,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Oceania",
         RegionCode = "009",
         SubRegion = "Melanesia",
-        SubRegionCode = "054",
+        SubRegionCode = "054"
       },
       new GridTileMap
       {
@@ -2452,7 +2446,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Americas",
         RegionCode = "019",
         SubRegion = "South America",
-        SubRegionCode = "005",
+        SubRegionCode = "005"
       },
       new GridTileMap
       {
@@ -2465,7 +2459,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "South-Eastern Asia",
-        SubRegionCode = "035",
+        SubRegionCode = "035"
       },
       new GridTileMap
       {
@@ -2478,7 +2472,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Asia",
         RegionCode = "142",
         SubRegion = "Western Asia",
-        SubRegionCode = "145",
+        SubRegionCode = "145"
       },
       new GridTileMap
       {
@@ -2491,7 +2485,7 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
+        SubRegionCode = "014"
       },
       new GridTileMap
       {
@@ -2504,8 +2498,8 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
         Region = "Africa",
         RegionCode = "002",
         SubRegion = "Eastern Africa",
-        SubRegionCode = "014",
-      },
+        SubRegionCode = "014"
+      }
     };
   }
 }

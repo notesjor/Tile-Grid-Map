@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Media;
 
@@ -10,8 +6,8 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
 {
   public class MapToolTip : ToolTip
   {
-    private TextBlock _label;
-    private TextBlock _value;
+    private readonly TextBlock _label;
+    private readonly TextBlock _value;
 
     public MapToolTip()
     {
@@ -22,13 +18,27 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
       var stack = new StackPanel
       {
         Background = new SolidColorBrush(Colors.White),
-        VerticalAlignment = System.Windows.VerticalAlignment.Stretch,
-        HorizontalAlignment = System.Windows.HorizontalAlignment.Stretch
+        VerticalAlignment = VerticalAlignment.Stretch,
+        HorizontalAlignment = HorizontalAlignment.Stretch
       };
 
-      _label = new TextBlock { Width = 110, Height = 24, Text = "", TextAlignment = System.Windows.TextAlignment.Center, Margin = new System.Windows.Thickness(0, 0, 10, 0) };
+      _label = new TextBlock
+      {
+        Width = 110,
+        Height = 24,
+        Text = "",
+        TextAlignment = TextAlignment.Center,
+        Margin = new Thickness(0, 0, 10, 0)
+      };
       stack.Children.Add(_label);
-      _value = new TextBlock { Width = 110, Height = 24, Text = "", TextAlignment = System.Windows.TextAlignment.Center, Margin = new System.Windows.Thickness(0, 0, 10, 0) };
+      _value = new TextBlock
+      {
+        Width = 110,
+        Height = 24,
+        Text = "",
+        TextAlignment = TextAlignment.Center,
+        Margin = new Thickness(0, 0, 10, 0)
+      };
       stack.Children.Add(_value);
 
       Content = stack;
