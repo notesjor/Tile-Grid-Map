@@ -21,11 +21,14 @@ namespace CorpusExplorer.Sdk.Extern.TileGridMap
                                  string rowSeparator = "\r\n")
     {
       _dic = new Dictionary<string, string>();
+      var seperator = new[] { rowSeparator };
       var lines = File.ReadAllText(path, encoding ?? Encoding.UTF8)
-                      .Split(new[] {rowSeparator}, StringSplitOptions.RemoveEmptyEntries);
+                      .Split(seperator, StringSplitOptions.RemoveEmptyEntries);
+      var separatorValue = new[] { valueSeparator };
+
       foreach (var line in lines)
       {
-        var cells = line.Split(new[] {valueSeparator}, StringSplitOptions.RemoveEmptyEntries);
+        var cells = line.Split(separatorValue, StringSplitOptions.RemoveEmptyEntries);
         if (cells.Length != 2)
           continue;
         if (_dic.ContainsKey(cells[0]))
